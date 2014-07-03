@@ -1,0 +1,6 @@
+## custom patches and upgrades
+
+# added MacPorts support to __fish_print_packages
+# custom prompt
+# custom command output pager
+# custom "safe rm" function (moves args to ~/.Trash)# custom "process grep" function for finding process IDs by name

@@ -1,0 +1,7 @@
+## custom patches and upgrades
+
+# redirect stderr to /dev/null for mount & umount (missing system files on mac)
+# change sshsf mountpoint completion to use __fish_complete_directories (c'mon!)
+# completions for custom pager script
+# completions for MacPorts
+# expanded sudo completions
