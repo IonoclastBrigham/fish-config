@@ -1,8 +1,7 @@
 function rgrep --description 'Recursive grep'
 	if test (count $argv) = 1
-grep -r $argv .
-else
-grep -r $argv
-end
-
+		grep --color=auto -r $argv .
+	else
+		grep --color=auto -r $argv
+	end
 end
