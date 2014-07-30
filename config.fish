@@ -2,7 +2,6 @@ set PATH $PATH /opt/local/bin /opt/local/sbin /usr/local/bin/android/ndk /usr/lo
 #set -Ux PATH
 #set -Ux DYLD_LIBRARY_PATH /usr/local/cuda/lib
 set -Ux EDITOR (which emacs)
-set -x GPG_TTY (tty)
 
 echo
 fortune
