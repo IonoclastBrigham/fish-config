@@ -1,7 +1,9 @@
-set PATH $PATH /opt/local/bin /opt/local/sbin /usr/local/bin/android/ndk /usr/local/bin/android/tools /usr/local/bin/android/platform-tools /usr/local/cuda/bin
-#set -Ux PATH
-#set -Ux DYLD_LIBRARY_PATH /usr/local/cuda/lib
-set -Ux EDITOR (which emacs)
+set -x ANDROIDROOT /usr/local/bin/android
+set -x GOROOT /usr/local/go
+set -x GOPATH /Users/prime/Code/gocode
+set -x PATH (for p in $PATH /opt/local/bin /opt/local/sbin $ANDROIDROOT/ndk $ANDROIDROOT/tools $ANDROIDROOT/platform-tools $GOROOT/bin $GOPATH/bin; echo $p; end | uniq)
+
+set -x EDITOR (which emacs)
 
 echo
 fortune
