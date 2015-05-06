@@ -2,7 +2,7 @@ function showlog --description 'Show git log for the given file, searching if ne
 	if test -e $argv[1]
 		set FILE $argv[1]
 	else
-		set FILE (find ~/Code/ninja -name $argv[1])
+		set FILE (find (git rev-parse --show-toplevel) -name $argv[1])
 		if test -z $FILE
 			echo Unable to find file $argv[1] >& 2
 			return 1
