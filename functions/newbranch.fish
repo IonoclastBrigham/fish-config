@@ -11,6 +11,6 @@ function newbranch --description 'Checks out a new branch and pushes it to a new
 	or return 1
 	co -b $BRANCH
 	or return 1
-	push -u origin $BRANCH:brig-$BRANCH
+	push -u origin $BRANCH:$BRANCH
 	or return 1
 end

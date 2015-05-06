@@ -1,4 +1,3 @@
-function ci --description 'shortcut for git commit -aS'
-	set -lx GPG_TTY (tty)
-	git commit -S -a $argv
+function ci --description 'shortcut for git commit -a'
+	git commit -a $argv
 end
